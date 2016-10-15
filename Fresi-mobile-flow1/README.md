@@ -1,2 +1,2 @@
-# Fresi-mobile-web-app
-It's a mobile web app for Fresi, an app to connect the farmers market with consumers
+# Fresi App flow1
+through HTML/CSS/Bootstrap/jQuery/Phone Gap
