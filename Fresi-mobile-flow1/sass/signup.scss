@@ -1,0 +1,124 @@
+@import 'style';
+
+#hero {
+	background-image: url(../images/signup-vertical.jpg);
+	background-size: cover;
+	position: absolute;
+	margin: 0;
+	z-index: -1;
+}
+
+#group-signup {
+	padding-left: $padding-normal;
+	padding-right: $padding-normal;
+}
+
+.logo-signup {
+	padding-top: $padding-big;
+	z-index: 1;
+
+}
+
+#logo-signup {
+	height: 35px;	
+}
+
+#form-signup {
+	width: 100%;
+	padding-top: $padding-normal;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 4px 5px 5px 2px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    font-size: 16px;
+
+    &:focus {
+	    // animation: opac 1.5s;
+    	border-bottom: 1px solid #D64C34;
+    	outline: none;
+   	// 	-webkit-transition: opacity 0.35s ease-in-out;
+  		// transition: opacity 0.35s ease-in-out;
+  		// opacity: 0
+    }
+}
+
+
+// @-webkit-keyframes opac {
+//     from {
+//         opacity: 1
+//     }
+//     to {
+//         opacity: 0
+//     }
+// }
+// @keyframes opac {
+//     from {
+//         opacity: 1
+//     }
+//     to {
+//         opacity: 0
+//     }
+// }
+
+.button {
+  	padding-top: $padding-small;
+	padding-bottom: $padding-small;
+	width: 100%;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+	border: none;
+}
+
+.button-submit {
+	@extend .button;
+	background-color: $light-color;
+    margin-top: 16px;
+    color: $brand-color;
+}
+
+.button-transfer {
+	@extend .button;
+	background: transparent;
+	color: $white-color;
+}
+
+.button-login {
+	@extend .button;
+	background: $light-color;
+    margin-top: 40px;
+}
+
+.or {
+	@extend .button;
+	padding-top: $padding-small;
+	color: $white-color;
+}
+
+.button-fsubmit {
+	@extend .button;
+	background-color: #3b5998;
+	color: $white-color;
+}
+
+@media screen and (min-width: 600px){
+	
+	#hero {
+		background-image: url(../images/signup.jpg);
+		background-size: cover;
+	}
+
+	#group-signup {
+		padding-left: 30%;
+		padding-right: 30%;
+	}
+
+	.button-submit, .button-transfer, .button-login, .button-fsubmit, input[type=text] {
+		width: 400px;
+	}
+}

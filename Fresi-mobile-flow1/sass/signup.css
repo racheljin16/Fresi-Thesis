@@ -1,0 +1,82 @@
+body {
+  font: 100% "Lato", serif;
+  color: #342C22;
+  text-align: center; }
+
+#hero {
+  background-image: url(../images/signup-vertical.jpg);
+  background-size: cover;
+  position: absolute;
+  margin: 0;
+  z-index: -1; }
+
+#group-signup {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.logo-signup {
+  padding-top: 100px;
+  z-index: 1; }
+
+#logo-signup {
+  height: 35px; }
+
+#form-signup {
+  width: 100%;
+  padding-top: 30px; }
+
+input[type=text] {
+  width: 100%;
+  padding: 4px 5px 5px 2px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  font-size: 16px; }
+  input[type=text]:focus {
+    border-bottom: 1px solid #D64C34;
+    outline: none; }
+
+.button, .button-submit, .button-transfer, .button-login, .or, .button-fsubmit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  border: none; }
+
+.button-submit {
+  background-color: #F2EDEB;
+  margin-top: 16px;
+  color: #D64C34; }
+
+.button-transfer {
+  background: transparent;
+  color: #ffffff; }
+
+.button-login {
+  background: #F2EDEB;
+  margin-top: 40px; }
+
+.or {
+  padding-top: 10px;
+  color: #ffffff; }
+
+.button-fsubmit {
+  background-color: #3b5998;
+  color: #ffffff; }
+
+@media screen and (min-width: 600px) {
+  #hero {
+    background-image: url(../images/signup.jpg);
+    background-size: cover; }
+
+  #group-signup {
+    padding-left: 30%;
+    padding-right: 30%; }
+
+  .button-submit, .button-transfer, .button-login, .button-fsubmit, input[type=text] {
+    width: 400px; } }
+
+/*# sourceMappingURL=signup.css.map */

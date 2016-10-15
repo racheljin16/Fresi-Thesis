@@ -1,0 +1,14 @@
+$font-stack: 'Lato', serif;
+$brand-color: #D64C34;
+$dark-color: #342C22;
+$light-color: #F2EDEB;
+$white-color: #ffffff;
+$padding-normal: 30px;
+$padding-big: 100px;
+$padding-small: 10px;
+
+body {
+        font: 100% $font-stack;
+        color: $dark-color;
+        text-align: center;
+      } 
