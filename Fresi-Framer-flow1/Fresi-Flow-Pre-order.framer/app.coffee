@@ -34,25 +34,13 @@ homepageMarkets = new Layer
 	image: "images/homepage-markets.png"
 	parent: homepageAll
 
-homepageSearch = new Layer
-	width: 750
-	height: 180
-	image: "images/homepage-search.png"
-	backgroundColor: "#fff"
-	opacity: 0
-homepageSearch.states.add
-	show:
-		opacity: 1
-homepageSearch.states.animationOptions = curve: "spring(750,50,0)"
-time: 1
-
 homepageTabBar = new Layer
 	width: 750
 	height: 98
 	x: 0
 	y: 1236
 	image: "images/homepage-tab-bar.jpg"
-	index: 1
+	index: 2
 	
 status = new Layer
 	width: 750
@@ -60,7 +48,20 @@ status = new Layer
 	x: 0
 	y: 0
 	image: "images/homepage-status.png"
+	index: 2
+	
+homepageSearch = new Layer
+	width: 750
+	height: 180
+	image: "images/homepage-search.png"
+	backgroundColor: "#fff"
 	index: 1
+	opacity: 0
+homepageSearch.states.add
+	show:
+		opacity: 1
+homepageSearch.states.animationOptions = curve: "spring(750,50,0)"
+time: 1
 
 homepageCover = new Layer
 	width: 656
@@ -76,6 +77,7 @@ homepageScroll = new ScrollComponent
 	width: 750
 	height: 2557
 	index: 0
+	backgroundColor: "#FFF"
 	contentInset:
 		top: 0
 		bottom: 1300
@@ -95,6 +97,7 @@ homepageScroll.onSwipeDownEnd ->
 		homepageSearch.states.switch("default")
 	else
 		homepageSearch.states.switch("show")
+
 # Homepage transition
 homepageCover.onClick ->
 	marketTitle.animate
@@ -105,6 +108,7 @@ homepageCover.onClick ->
 		properties: 
 			x: 0
 		time: 0.3
+	homepageSearch.states.switch("default")
 
 # Page 2 assets - market page	
 marketAll = new Layer
@@ -134,8 +138,11 @@ amount = 4
 heroImage = "images/market-hero-"
 
 marketHeros = new PageComponent
-	width: Screen.width, height: 423
-	y: 0, scrollVertical: false
+	width: Screen.width 
+	height: 423
+	y: 0
+	scrollVertical: false
+	directionLock: true
 	parent: marketAll
 	
 for i in [0...amount]
@@ -180,11 +187,13 @@ marketHeros.on "change:currentPage", ->
 # vertical scroll
 marketMainScroll = new ScrollComponent
 	scrollHorizontal: false	
+	directionLock: true
 	width: screen.width
 	height: marketHeros.content.height+marketCategory.height
 	x: 750
 	y: 150
 	index: 0
+	backgroundColor: "#FFF"
 	contentInset:
 		top: 0
 		bottom: 3600
