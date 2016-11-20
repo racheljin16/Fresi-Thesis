@@ -11,9 +11,9 @@
   "deviceScale" : "fit",
   "foldedCodeRanges" : [
     "{0, 205}",
-    "{1229, 628}",
-    "{2401, 1405}",
-    "{3807, 318}"
+    "{1228, 874}",
+    "{2646, 1405}",
+    "{4052, 318}"
   ],
   "orientation" : 0,
   "fullScreen" : false
