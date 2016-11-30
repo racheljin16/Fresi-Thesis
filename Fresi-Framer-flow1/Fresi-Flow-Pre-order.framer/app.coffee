@@ -216,7 +216,47 @@ marketTitle = new Layer
 	image: "images/market-title.jpg"
 	index: 0
 
+# Video play light box
+layerLightBox = new Layer
+	width: 750
+	height: 1334
+	x: 0
+	y: 0
+	backgroundColor: "000"
+	opacity: 0
 
+layerVideo = new VideoLayer
+	width: 750
+	height: 1334
+	x: 0
+	y: 0
+	video: "images/demo.mp4"
+	parent: layerLightBox
+layerVideo.player.autoplay = false
+layerVideo.player.loop = true
+
+backButton = new Layer
+	width: 25
+	height: 42
+	x: 42
+	y: 70
+	image: "images/backVideo.png"
+	parent: layerLightBox
+
+marketHeros.onClick ->
+	layerVideo.player.play()
+	layerLightBox.animate
+		properties: 
+			opacity: 1
+		time: 0.3
+	
+
+backButton.onClick ->
+	layerLightBox.animate
+		properties:
+			opacity: 0
+		time: 0.3
+	layerVideo.player.pause()
 
 
 
