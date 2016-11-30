@@ -19,7 +19,7 @@ homepageAll = new Layer
 
 homepageMap = new Layer
 	width: 750
-	height: 1334
+	height: 757
 	x: 0
 	y: 0
 	image: "images/homepage-map.jpg"
@@ -84,19 +84,28 @@ homepageScroll = new ScrollComponent
 homepageAll.parent = homepageScroll.content
 
 # Scroll animation
-homepageScroll.onSwipeUpEnd ->
-# 	print homepageScroll.content.y
-	if homepageScroll.content.y < -420
-		homepageSearch.states.switch("show")
-	else
-		homepageSearch.states.switch("default")
-		
-homepageScroll.onSwipeDownEnd ->
-# 	print homepageScroll.content.y
-	if homepageScroll.content.y >= -420
-		homepageSearch.states.switch("default")
-	else
-		homepageSearch.states.switch("show")
+# homepageScroll.onSwipeUpEnd ->
+# # 	print homepageScroll.content.y
+# 	if homepageScroll.content.y < -420
+# 		homepageSearch.states.switch("show")
+# 	else
+# 		homepageSearch.states.switch("default")
+# 		
+# homepageScroll.onSwipeDownEnd ->
+# # 	print homepageScroll.content.y
+# 	if homepageScroll.content.y >= -420
+# 		homepageSearch.states.switch("default")
+# 	else
+# 		homepageSearch.states.switch("show")
+
+homepageScroll.onMove ->
+	scrolltoY(homepageScroll.scrollY)
+	
+scrolltoY = (y) ->
+	homepageSearch.opacity = Utils.modulate(y, [200, 507], [0, 1], true)
+	homepageMap.blur = Utils.modulate(y, [150, 607], [0, 10], true)
+
+	
 
 # Homepage transition
 homepageCover.onClick ->
