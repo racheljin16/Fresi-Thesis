@@ -14,6 +14,12 @@
 		CC3AAF101DEC97080073F77E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3AAF0E1DEC97080073F77E /* LaunchScreen.storyboard */; };
 		CC3AAF1B1DEC97080073F77E /* Fresi_Swift_PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3AAF1A1DEC97080073F77E /* Fresi_Swift_PrototypeTests.swift */; };
 		CC3AAF261DEC97080073F77E /* Fresi_Swift_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3AAF251DEC97080073F77E /* Fresi_Swift_PrototypeUITests.swift */; };
+		CC97FB661DEFA83B00AB60EA /* FindMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB651DEFA83B00AB60EA /* FindMarketViewController.swift */; };
+		CC97FB681DEFAE0000AB60EA /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB671DEFAE0000AB60EA /* RecipeViewController.swift */; };
+		CC97FB6A1DEFB40900AB60EA /* HomeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB691DEFB40900AB60EA /* HomeMapViewController.swift */; };
+		CC97FB6C1DEFB42600AB60EA /* MapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB6B1DEFB42600AB60EA /* MapDetailViewController.swift */; };
+		CC97FB6E1DEFB78600AB60EA /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB6D1DEFB78600AB60EA /* MarketViewController.swift */; };
+		CC97FB701DEFC1E900AB60EA /* MarketMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB6F1DEFC1E900AB60EA /* MarketMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		CC3AAF211DEC97080073F77E /* Fresi-Swift-PrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fresi-Swift-PrototypeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3AAF251DEC97080073F77E /* Fresi_Swift_PrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fresi_Swift_PrototypeUITests.swift; sourceTree = "<group>"; };
 		CC3AAF271DEC97080073F77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC97FB651DEFA83B00AB60EA /* FindMarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindMarketViewController.swift; sourceTree = "<group>"; };
+		CC97FB671DEFAE0000AB60EA /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		CC97FB691DEFB40900AB60EA /* HomeMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMapViewController.swift; sourceTree = "<group>"; };
+		CC97FB6B1DEFB42600AB60EA /* MapDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDetailViewController.swift; sourceTree = "<group>"; };
+		CC97FB6D1DEFB78600AB60EA /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		CC97FB6F1DEFC1E900AB60EA /* MarketMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		CC3AAF041DEC97080073F77E /* Fresi-Swift-Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				CC97FB641DEFA1F800AB60EA /* View Controllers */,
 				CC3AAF051DEC97080073F77E /* AppDelegate.swift */,
 				CC3AAF071DEC97080073F77E /* ViewController.swift */,
 				CC3AAF091DEC97080073F77E /* Main.storyboard */,
@@ -123,6 +136,19 @@
 				CC3AAF271DEC97080073F77E /* Info.plist */,
 			);
 			path = "Fresi-Swift-PrototypeUITests";
+			sourceTree = "<group>";
+		};
+		CC97FB641DEFA1F800AB60EA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC97FB651DEFA83B00AB60EA /* FindMarketViewController.swift */,
+				CC97FB671DEFAE0000AB60EA /* RecipeViewController.swift */,
+				CC97FB691DEFB40900AB60EA /* HomeMapViewController.swift */,
+				CC97FB6B1DEFB42600AB60EA /* MapDetailViewController.swift */,
+				CC97FB6D1DEFB78600AB60EA /* MarketViewController.swift */,
+				CC97FB6F1DEFC1E900AB60EA /* MarketMapViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC97FB681DEFAE0000AB60EA /* RecipeViewController.swift in Sources */,
+				CC97FB701DEFC1E900AB60EA /* MarketMapViewController.swift in Sources */,
+				CC97FB661DEFA83B00AB60EA /* FindMarketViewController.swift in Sources */,
+				CC97FB6C1DEFB42600AB60EA /* MapDetailViewController.swift in Sources */,
 				CC3AAF081DEC97080073F77E /* ViewController.swift in Sources */,
+				CC97FB6A1DEFB40900AB60EA /* HomeMapViewController.swift in Sources */,
 				CC3AAF061DEC97080073F77E /* AppDelegate.swift in Sources */,
+				CC97FB6E1DEFB78600AB60EA /* MarketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +535,7 @@
 				CC3AAF2C1DEC97080073F77E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC3AAF2D1DEC97080073F77E /* Build configuration list for PBXNativeTarget "Fresi-Swift-PrototypeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +544,7 @@
 				CC3AAF2F1DEC97080073F77E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC3AAF301DEC97080073F77E /* Build configuration list for PBXNativeTarget "Fresi-Swift-PrototypeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +553,7 @@
 				CC3AAF321DEC97080073F77E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
