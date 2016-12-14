@@ -25,6 +25,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="916"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p3p-oG-RB1">
+                                        <rect key="frame" x="26" y="345" width="328" height="185"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="xIO-3p-HkG" kind="push" id="agu-6m-BI1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="recipe-search" id="RiG-EK-dco">
@@ -194,19 +201,47 @@
             </objects>
             <point key="canvasLocation" x="-809.5" y="1699.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe Detail View Controller-->
         <scene sceneID="Svp-sK-3FC">
             <objects>
-                <viewController id="xIO-3p-HkG" sceneMemberID="viewController">
+                <viewController id="xIO-3p-HkG" customClass="RecipeDetailViewController" customModule="Fresi_Swift_Prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZVf-bO-sbj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="recipe-detail" id="Ed5-6Q-SQT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="68c-ng-f7C">
+                                <rect key="frame" x="0.0" y="75" width="375" height="572"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="recipe-detail1" id="rP0-X7-66p">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="698"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KDT-Th-AQa">
+                                        <rect key="frame" x="231" y="383" width="118" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="Lg3-J2-vdq" kind="push" id="q5w-cb-0fT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Yha-Fw-4Tc"/>
+                    <connections>
+                        <outlet property="imageView" destination="rP0-X7-66p" id="lVn-Ni-FJf"/>
+                        <outlet property="scrollView" destination="68c-ng-f7C" id="cvW-uu-0WR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjG-NW-zhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-808" y="2520"/>
+            <point key="canvasLocation" x="-337.5" y="1699.5"/>
         </scene>
         <!--Market Map View Controller-->
         <scene sceneID="HZ0-Zu-Oio">
@@ -233,7 +268,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeF-jE-x2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-336.5" y="1699.5"/>
+            <point key="canvasLocation" x="-809" y="2537"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JVI-JX-EEy">
+            <objects>
+                <viewController id="Lg3-J2-vdq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GQX-dp-i9p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="find-recipe-vendor1" id="Bpc-TQ-ehh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="Y1I-aU-zdz">
+                                <rect key="frame" x="0.0" y="75" width="375" height="592"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="find-recipe-vendor-2" id="s14-6r-xXj">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="698"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sah-J7-th3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="srz-tC-u8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338.5" y="2535.5"/>
         </scene>
         <!--Find Market View Controller-->
         <scene sceneID="4vv-NY-Sfc">
@@ -358,31 +424,31 @@
                                         <rect key="frame" x="750" y="0.0" width="375" height="667"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="onboarding4" id="1Ad-QJ-yEf">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="onboarding4-1" id="1Ad-QJ-yEf">
                                         <rect key="frame" x="1125" y="0.0" width="375" height="667"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="aEs-s7-BhK">
-                                <rect key="frame" x="168" y="615" width="39" height="37"/>
+                                <rect key="frame" x="168" y="135" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" red="0.83921568629999999" green="0.29803921570000003" blue="0.20392156859999999" alpha="0.44252996575342468" colorSpace="calibratedRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.83921568629999999" green="0.29803921570000003" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="0.1973994006849315" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </pageControl>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="login-fb" id="yUc-eT-HlP">
-                                <rect key="frame" x="63" y="560" width="248" height="36"/>
+                                <rect key="frame" x="58" y="560" width="262" height="38"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="skip-button" id="hB0-bh-uNJ">
-                                <rect key="frame" x="62" y="606" width="251" height="36"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="trynow" id="hB0-bh-uNJ">
+                                <rect key="frame" x="58" y="606" width="262" height="38"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MQO-6H-dtw">
                                 <rect key="frame" x="63" y="606" width="248" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="JAX-H7-8Py" kind="modal" id="hpJ-Eq-vLd"/>
+                                    <segue destination="JAX-H7-8Py" kind="modal" animates="NO" id="hpJ-Eq-vLd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -526,6 +592,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="find-recipe-vendor-2" width="375" height="698"/>
+        <image name="find-recipe-vendor1" width="375" height="75"/>
         <image name="home-map" width="375" height="667"/>
         <image name="homepage-map" width="375" height="378"/>
         <image name="homepage-markets" width="375" height="900"/>
@@ -542,15 +610,17 @@
         <image name="onboarding1" width="375" height="667"/>
         <image name="onboarding2" width="375" height="667"/>
         <image name="onboarding3" width="375" height="667"/>
-        <image name="onboarding4" width="375" height="667"/>
+        <image name="onboarding4-1" width="375" height="667"/>
+        <image name="recipe-detail" width="375" height="75"/>
+        <image name="recipe-detail1" width="375" height="698"/>
         <image name="recipe-list" width="375" height="916"/>
         <image name="recipe-search" width="375" height="90"/>
-        <image name="skip-button" width="309" height="45"/>
         <image name="tab1" width="24" height="23"/>
         <image name="tab2" width="24" height="22"/>
         <image name="tab3" width="24" height="24"/>
         <image name="tab4" width="22" height="23"/>
         <image name="tab5" width="23" height="23"/>
+        <image name="trynow" width="309" height="45"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
