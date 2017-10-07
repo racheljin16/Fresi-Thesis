@@ -20,7 +20,7 @@ class FindMarketViewController: UIViewController, UIScrollViewDelegate {
 
         scrollView.contentSize = imageView.frame.size
         scrollView.delegate = self
-        self.homeSearchView.alpha = 0
+        //self.homeSearchView.alpha = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,18 +39,18 @@ class FindMarketViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView){
-        
-        let offset = Float(scrollView.contentOffset.y)
-        
-        if offset >= 200 {
-            UIView.animate(withDuration: 1, animations: {
-                self.homeSearchView.alpha = 1
-            })
-        } else {
-            self.homeSearchView.alpha = 0
-        }
-    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView){
+//
+//        let offset = Float(scrollView.contentOffset.y)
+//
+//        if offset >= 200 {
+//            UIView.animate(withDuration: 1, animations: {
+//                self.homeSearchView.alpha = 1
+//            })
+//        } else {
+//            self.homeSearchView.alpha = 0
+//        }
+//    }
     
 
     /*
