@@ -18,7 +18,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        scrollView.contentSize = CGSize(width: 1500, height: 667)
+        scrollView.contentSize = CGSize(width: 1125, height: 667)
         scrollView.delegate = self
         logInView.alpha = 0
         skipView.alpha = 0
@@ -34,7 +34,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView){
         let offset = Float(scrollView.contentOffset.x)
         
-        if offset >= 1125 {
+        if offset >= 750 {
             UIView.animate(withDuration: 0.3, animations: {
                 self.logInView.alpha = 1
                 self.skipView.alpha = 1
