@@ -21,17 +21,17 @@
                                 <rect key="frame" x="0.0" y="74" width="375" height="578"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="recipe-list" id="ySJ-z4-v0m">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="796"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p3p-oG-RB1">
-                                        <rect key="frame" x="26" y="345" width="328" height="185"/>
+                                        <rect key="frame" x="8" y="218" width="176" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="xIO-3p-HkG" kind="push" id="agu-6m-BI1"/>
                                         </connections>
                                     </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="recipe-list" id="ySJ-z4-v0m">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="796"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                 </subviews>
                             </scrollView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="recipe-search" id="nQL-Vv-9Ng">
@@ -60,11 +60,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" alwaysBounceVertical="YES" id="p1P-w6-CPE">
-                                <rect key="frame" x="0.0" y="75" width="375" height="584"/>
+                                <rect key="frame" x="0.0" y="75" width="375" height="592"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="market-category" id="CmI-sL-Xv4">
-                                        <rect key="frame" x="0.0" y="211" width="375" height="2133"/>
+                                        <rect key="frame" x="0.0" y="211" width="375" height="872"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" id="cjj-cD-WWx">
@@ -103,7 +103,7 @@
                                 <rect key="frame" x="313" y="20" width="54" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="u89-af-lTp" kind="modal" modalTransitionStyle="flipHorizontal" id="vhB-Zf-Wh8"/>
+                                    <segue destination="u89-af-lTp" kind="modal" animates="NO" id="vhB-Zf-Wh8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aVE-vB-LFE">
@@ -244,17 +244,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1028"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="50c-hQ-uHK">
-                                                <rect key="frame" x="25" y="489" width="331" height="185"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <connections>
-                                                    <segue destination="5ho-Qw-oqs" kind="push" id="kij-ic-IdQ"/>
-                                                </connections>
-                                            </button>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="homepage-markets" id="cNd-uM-IHP">
                                                 <rect key="frame" x="0.0" y="50" width="375" height="1028"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="50c-hQ-uHK">
+                                                <rect key="frame" x="22" y="207" width="331" height="238"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="5ho-Qw-oqs" kind="push" id="TSu-eN-hEV"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -362,11 +362,11 @@
                                 <rect key="frame" x="58" y="550" width="262" height="38"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MQO-6H-dtw">
-                                <rect key="frame" x="63" y="550" width="248" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x9a-bV-Fmg">
+                                <rect key="frame" x="58" y="500" width="262" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="JAX-H7-8Py" kind="modal" animates="NO" id="Gch-2b-N1S"/>
+                                    <segue destination="6pH-oA-Wrh" kind="modal" animates="NO" id="UdB-ml-sgy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -382,6 +382,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ew8-ZF-0st" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="127.5" y="-1703.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kyf-XX-03C">
+            <objects>
+                <viewController id="6pH-oA-Wrh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9m1-Ht-06u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="fb_login" id="vVS-TS-a2x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zj5-SO-WJV">
+                                <rect key="frame" x="192" y="617" width="167" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="uV9-p0-29M" kind="modal" animates="NO" id="seF-mR-7HF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Urj-Sn-X93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611.5" y="-1706.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BCS-at-rUh">
+            <objects>
+                <viewController id="uV9-p0-29M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eXy-l7-rIT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="access" id="m2r-Az-xwQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MQO-6H-dtw">
+                                <rect key="frame" x="182" y="388" width="148" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="JAX-H7-8Py" kind="modal" animates="NO" id="Gch-2b-N1S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaT-fg-8mD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089.5" y="-1710.5"/>
         </scene>
         <!--MARKET-->
         <scene sceneID="ajX-4J-yha">
@@ -478,13 +532,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="access" width="375" height="667"/>
         <image name="account" width="375" height="667"/>
+        <image name="fb_login" width="375" height="667"/>
         <image name="find-recipe-vendor-2" width="375" height="698"/>
         <image name="find-recipe-vendor1" width="375" height="75"/>
         <image name="homepage-markets" width="375" height="1026"/>
         <image name="homepage-search" width="375" height="74"/>
         <image name="login-fb" width="309" height="45"/>
-        <image name="market-category" width="375" height="2133"/>
+        <image name="market-category" width="375" height="874"/>
         <image name="market-hero-1" width="375" height="211"/>
         <image name="market-hero-2" width="375" height="211"/>
         <image name="market-hero-3" width="375" height="211"/>
