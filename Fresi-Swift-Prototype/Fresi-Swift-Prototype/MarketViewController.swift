@@ -20,7 +20,7 @@ class MarketViewController: UIViewController, UIScrollViewDelegate {
 
         heroScrollView.contentSize = CGSize(width: 1500, height: 211)
         heroScrollView.delegate = self
-        listScrollView.contentSize = CGSize(width: 275, height: 2344)
+        listScrollView.contentSize = CGSize(width: 375, height: 1055)
         listScrollView.delegate = self
     }
     
