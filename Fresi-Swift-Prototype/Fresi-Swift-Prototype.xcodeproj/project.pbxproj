@@ -15,6 +15,10 @@
 		CC3AAF1B1DEC97080073F77E /* Fresi_Swift_PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3AAF1A1DEC97080073F77E /* Fresi_Swift_PrototypeTests.swift */; };
 		CC3AAF261DEC97080073F77E /* Fresi_Swift_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3AAF251DEC97080073F77E /* Fresi_Swift_PrototypeUITests.swift */; };
 		CC3AE46B1DFD1EA10094076C /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3AE46A1DFD1EA10094076C /* RecipeDetailViewController.swift */; };
+		CC57ECA61F9DA3AA00230E70 /* lato in Resources */ = {isa = PBXBuildFile; fileRef = CC57ECA51F9DA39500230E70 /* lato */; };
+		CC57ECA81F9DA3F000230E70 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC57ECA71F9DA3F000230E70 /* Lato-Regular.ttf */; };
+		CC57ECAA1F9DA3F700230E70 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC57ECA91F9DA3F700230E70 /* Lato-Medium.ttf */; };
+		CC57ECAC1F9DA40000230E70 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC57ECAB1F9DA40000230E70 /* Lato-Bold.ttf */; };
 		CC66DDAC1F9D681B00B7928E /* FbLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DDAB1F9D681B00B7928E /* FbLogInViewController.swift */; };
 		CC66DDB21F9D6AB800B7928E /* FBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DDB11F9D6AB800B7928E /* FBViewController.swift */; };
 		CC97FB661DEFA83B00AB60EA /* FindMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB651DEFA83B00AB60EA /* FindMarketViewController.swift */; };
@@ -58,6 +62,10 @@
 		CC3AAF251DEC97080073F77E /* Fresi_Swift_PrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fresi_Swift_PrototypeUITests.swift; sourceTree = "<group>"; };
 		CC3AAF271DEC97080073F77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC3AE46A1DFD1EA10094076C /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		CC57ECA51F9DA39500230E70 /* lato */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lato; sourceTree = SOURCE_ROOT; };
+		CC57ECA71F9DA3F000230E70 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		CC57ECA91F9DA3F700230E70 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Medium.ttf"; path = "lato/Lato-Medium.ttf"; sourceTree = "<group>"; };
+		CC57ECAB1F9DA40000230E70 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
 		CC66DDAB1F9D681B00B7928E /* FbLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbLogInViewController.swift; sourceTree = "<group>"; };
 		CC66DDB11F9D6AB800B7928E /* FBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBViewController.swift; sourceTree = "<group>"; };
 		CC97FB651DEFA83B00AB60EA /* FindMarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindMarketViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +105,9 @@
 		CC3AAEF91DEC97080073F77E = {
 			isa = PBXGroup;
 			children = (
+				CC57ECAB1F9DA40000230E70 /* Lato-Bold.ttf */,
+				CC57ECA91F9DA3F700230E70 /* Lato-Medium.ttf */,
+				CC57ECA71F9DA3F000230E70 /* Lato-Regular.ttf */,
 				CC3AAF041DEC97080073F77E /* Fresi-Swift-Prototype */,
 				CC3AAF191DEC97080073F77E /* Fresi-Swift-PrototypeTests */,
 				CC3AAF241DEC97080073F77E /* Fresi-Swift-PrototypeUITests */,
@@ -117,6 +128,7 @@
 		CC3AAF041DEC97080073F77E /* Fresi-Swift-Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				CC57ECA51F9DA39500230E70 /* lato */,
 				CC97FB641DEFA1F800AB60EA /* View Controllers */,
 				CC3AAF051DEC97080073F77E /* AppDelegate.swift */,
 				CC3AAF071DEC97080073F77E /* ViewController.swift */,
@@ -270,8 +282,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC57ECA81F9DA3F000230E70 /* Lato-Regular.ttf in Resources */,
+				CC57ECA61F9DA3AA00230E70 /* lato in Resources */,
 				CC3AAF101DEC97080073F77E /* LaunchScreen.storyboard in Resources */,
+				CC57ECAC1F9DA40000230E70 /* Lato-Bold.ttf in Resources */,
 				CC3AAF0D1DEC97080073F77E /* Assets.xcassets in Resources */,
+				CC57ECAA1F9DA3F700230E70 /* Lato-Medium.ttf in Resources */,
 				CC3AAF0B1DEC97080073F77E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

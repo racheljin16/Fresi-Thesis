@@ -39,18 +39,6 @@ class FindMarketViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
-//    func scrollViewDidScroll(_ scrollView: UIScrollView){
-//
-//        let offset = Float(scrollView.contentOffset.y)
-//
-//        if offset >= 200 {
-//            UIView.animate(withDuration: 1, animations: {
-//                self.homeSearchView.alpha = 1
-//            })
-//        } else {
-//            self.homeSearchView.alpha = 0
-//        }
-//    }
     
 
     /*
