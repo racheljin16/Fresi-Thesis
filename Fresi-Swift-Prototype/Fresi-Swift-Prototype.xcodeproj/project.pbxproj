@@ -15,6 +15,8 @@
 		CC3AAF1B1DEC97080073F77E /* Fresi_Swift_PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3AAF1A1DEC97080073F77E /* Fresi_Swift_PrototypeTests.swift */; };
 		CC3AAF261DEC97080073F77E /* Fresi_Swift_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3AAF251DEC97080073F77E /* Fresi_Swift_PrototypeUITests.swift */; };
 		CC3AE46B1DFD1EA10094076C /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3AE46A1DFD1EA10094076C /* RecipeDetailViewController.swift */; };
+		CC66DDAC1F9D681B00B7928E /* FbLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DDAB1F9D681B00B7928E /* FbLogInViewController.swift */; };
+		CC66DDB21F9D6AB800B7928E /* FBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66DDB11F9D6AB800B7928E /* FBViewController.swift */; };
 		CC97FB661DEFA83B00AB60EA /* FindMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB651DEFA83B00AB60EA /* FindMarketViewController.swift */; };
 		CC97FB681DEFAE0000AB60EA /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB671DEFAE0000AB60EA /* RecipeViewController.swift */; };
 		CC97FB6A1DEFB40900AB60EA /* HomeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB691DEFB40900AB60EA /* HomeMapViewController.swift */; };
@@ -56,6 +58,8 @@
 		CC3AAF251DEC97080073F77E /* Fresi_Swift_PrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fresi_Swift_PrototypeUITests.swift; sourceTree = "<group>"; };
 		CC3AAF271DEC97080073F77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC3AE46A1DFD1EA10094076C /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		CC66DDAB1F9D681B00B7928E /* FbLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbLogInViewController.swift; sourceTree = "<group>"; };
+		CC66DDB11F9D6AB800B7928E /* FBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBViewController.swift; sourceTree = "<group>"; };
 		CC97FB651DEFA83B00AB60EA /* FindMarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindMarketViewController.swift; sourceTree = "<group>"; };
 		CC97FB671DEFAE0000AB60EA /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		CC97FB691DEFB40900AB60EA /* HomeMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMapViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				CC3AAF051DEC97080073F77E /* AppDelegate.swift */,
 				CC3AAF071DEC97080073F77E /* ViewController.swift */,
 				CC3AAF091DEC97080073F77E /* Main.storyboard */,
+				CC66DDAB1F9D681B00B7928E /* FbLogInViewController.swift */,
+				CC66DDB11F9D6AB800B7928E /* FBViewController.swift */,
 				CC3AAF0C1DEC97080073F77E /* Assets.xcassets */,
 				CC3AAF0E1DEC97080073F77E /* LaunchScreen.storyboard */,
 				CC3AAF111DEC97080073F77E /* Info.plist */,
@@ -299,6 +305,8 @@
 				CC97FB6A1DEFB40900AB60EA /* HomeMapViewController.swift in Sources */,
 				CC3AAF061DEC97080073F77E /* AppDelegate.swift in Sources */,
 				CCD51B381DF8F6C700E39473 /* OnboardingViewController.swift in Sources */,
+				CC66DDB21F9D6AB800B7928E /* FBViewController.swift in Sources */,
+				CC66DDAC1F9D681B00B7928E /* FbLogInViewController.swift in Sources */,
 				CC3AE46B1DFD1EA10094076C /* RecipeDetailViewController.swift in Sources */,
 				CC97FB6E1DEFB78600AB60EA /* MarketViewController.swift in Sources */,
 			);

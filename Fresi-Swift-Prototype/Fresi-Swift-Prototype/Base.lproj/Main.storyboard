@@ -386,7 +386,7 @@
         <!--View Controller-->
         <scene sceneID="Kyf-XX-03C">
             <objects>
-                <viewController id="6pH-oA-Wrh" sceneMemberID="viewController">
+                <viewController id="6pH-oA-Wrh" customClass="FBViewController" customModule="Fresi_Swift_Prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9m1-Ht-06u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -399,7 +399,8 @@
                                 <rect key="frame" x="192" y="617" width="167" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="uV9-p0-29M" kind="modal" animates="NO" id="seF-mR-7HF"/>
+                                    <action selector="onTapAllow:" destination="6pH-oA-Wrh" eventType="touchDown" id="gzb-xJ-bwM"/>
+                                    <segue destination="JAX-H7-8Py" kind="modal" identifier="GoToHomeSegue" animates="NO" id="k1y-wn-mG8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -425,9 +426,6 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MQO-6H-dtw">
                                 <rect key="frame" x="182" y="388" width="148" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="JAX-H7-8Py" kind="modal" animates="NO" id="Gch-2b-N1S"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
