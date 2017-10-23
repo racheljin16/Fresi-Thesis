@@ -8,6 +8,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Recipe View Controller-->
         <scene sceneID="1cf-WM-ne1">
@@ -231,7 +242,7 @@
         <!--Find Market View Controller-->
         <scene sceneID="4vv-NY-Sfc">
             <objects>
-                <viewController id="XRj-lh-60J" customClass="FindMarketViewController" customModule="Fresi_Swift_Prototype" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="pageSheet" id="XRj-lh-60J" customClass="FindMarketViewController" customModule="Fresi_Swift_Prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="isi-QZ-m9L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,12 +255,136 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1028"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="homepage-markets" id="cNd-uM-IHP">
-                                                <rect key="frame" x="0.0" y="50" width="375" height="1028"/>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="1map" id="QjG-U5-Jdj">
+                                                <rect key="frame" x="0.0" y="50" width="375" height="185"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="2fm" id="OmV-Hj-xT8">
+                                                <rect key="frame" x="23" y="261" width="328" height="184"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sunnyvale Farmers Market" adjustsFontSizeToFit="NO" minimumFontSize="17" id="Nm2-qk-Fcb">
+                                                <rect key="frame" x="25" y="202" width="355" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Morning, Annie!" adjustsFontSizeToFit="NO" minimumFontSize="17" id="QLO-R2-TDp">
+                                                <rect key="frame" x="25" y="82" width="291" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Start to explore nearby" minimumFontSize="17" id="nwN-06-JtP">
+                                                <rect key="frame" x="26" y="119" width="267" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="farmers markets" minimumFontSize="17" id="yO9-Bc-r93">
+                                                <rect key="frame" x="26" y="144" width="267" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SAT 9:00AM - 1:00 PM" minimumFontSize="17" id="sve-3p-AKF">
+                                                <rect key="frame" x="25" y="223" width="267" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.8 mi" textAlignment="right" minimumFontSize="17" id="RUe-YX-KkU">
+                                                <rect key="frame" x="308" y="223" width="45" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sunnyvale Farmers Market" adjustsFontSizeToFit="NO" minimumFontSize="17" id="fKT-qW-jKv">
+                                                <rect key="frame" x="23" y="472" width="355" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SUN 9:00AM - 1:00 PM" minimumFontSize="17" id="ARz-Tl-x6t">
+                                                <rect key="frame" x="23" y="493" width="267" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2.3 mi" textAlignment="right" minimumFontSize="17" id="npf-mJ-Fhk">
+                                                <rect key="frame" x="303" y="761" width="48" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="3fm" id="Ox9-ly-1eS">
+                                                <rect key="frame" x="22" y="529" width="328" height="185"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sunnyvale Farmers Market" adjustsFontSizeToFit="NO" minimumFontSize="17" id="diD-GN-4Xy">
+                                                <rect key="frame" x="25" y="736" width="355" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SAT 9:00AM - 1:00 PM" minimumFontSize="17" id="0Zf-rW-0JE">
+                                                <rect key="frame" x="25" y="761" width="267" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3.5 mi" textAlignment="right" minimumFontSize="17" id="sfX-FV-Nua">
+                                                <rect key="frame" x="300" y="454" width="48" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="4fm" id="wYw-6x-m3r">
+                                                <rect key="frame" x="25" y="791" width="328" height="185"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="See more nearby markets" adjustsFontSizeToFit="NO" minimumFontSize="17" id="k0o-vl-l96">
+                                                <rect key="frame" x="102" y="1001" width="355" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.83921568627450982" green="0.29803921568627451" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Search by address" adjustsFontSizeToFit="NO" minimumFontSize="17" id="Y8P-8C-LCR">
+                                                <rect key="frame" x="132" y="1034" width="355" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="market_icon_homepage" id="A50-h3-8AQ">
+                                                <rect key="frame" x="72" y="1005" width="18" height="16"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="search_icon_homepage" id="bLq-f7-Ktf">
+                                                <rect key="frame" x="101" y="1036" width="18" height="18"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="50c-hQ-uHK">
-                                                <rect key="frame" x="22" y="207" width="331" height="238"/>
+                                                <rect key="frame" x="22" y="262" width="331" height="183"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <segue destination="5ho-Qw-oqs" kind="push" id="TSu-eN-hEV"/>
@@ -268,6 +403,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="70i-xO-BpD"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="homeSearchView" destination="IXq-7t-xkg" id="3DO-0d-Fsp"/>
                         <outlet property="imageView" destination="b9E-Rk-cm1" id="7A8-Uw-eLz"/>
@@ -276,7 +412,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgW-aq-WAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-808.5" y="837.5"/>
+            <point key="canvasLocation" x="-808" y="860"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9WW-lK-b2w">
@@ -411,30 +547,6 @@
             </objects>
             <point key="canvasLocation" x="611.5" y="-1706.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="BCS-at-rUh">
-            <objects>
-                <viewController id="uV9-p0-29M" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eXy-l7-rIT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" image="access" id="m2r-Az-xwQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MQO-6H-dtw">
-                                <rect key="frame" x="182" y="388" width="148" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zaT-fg-8mD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1089.5" y="-1710.5"/>
-        </scene>
         <!--MARKET-->
         <scene sceneID="ajX-4J-yha">
             <objects>
@@ -530,12 +642,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="access" width="375" height="667"/>
+        <image name="1map" width="375" height="185"/>
+        <image name="2fm" width="328" height="184"/>
+        <image name="3fm" width="328" height="185"/>
+        <image name="4fm" width="328" height="185"/>
         <image name="account" width="375" height="667"/>
         <image name="fb_login" width="375" height="667"/>
         <image name="find-recipe-vendor-2" width="375" height="698"/>
         <image name="find-recipe-vendor1" width="375" height="75"/>
-        <image name="homepage-markets" width="375" height="1026"/>
         <image name="homepage-search" width="375" height="74"/>
         <image name="login-fb" width="309" height="45"/>
         <image name="market-category" width="375" height="874"/>
@@ -545,6 +659,7 @@
         <image name="market-hero-4" width="375" height="211"/>
         <image name="market-map" width="375" height="667"/>
         <image name="market-title" width="375" height="75"/>
+        <image name="market_icon_homepage" width="18" height="16"/>
         <image name="notif" width="375" height="667"/>
         <image name="onboarding1" width="375" height="667"/>
         <image name="onboarding2" width="375" height="667"/>
@@ -553,6 +668,7 @@
         <image name="recipe-detail1" width="375" height="698"/>
         <image name="recipe-list" width="375" height="796"/>
         <image name="recipe-search" width="375" height="74"/>
+        <image name="search_icon_homepage" width="18" height="18"/>
         <image name="tab1" width="25" height="22"/>
         <image name="tab2" width="24" height="22"/>
         <image name="tab3" width="22" height="23"/>
