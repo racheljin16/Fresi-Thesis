@@ -10,9 +10,12 @@ import UIKit
 
 class OnboardingViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var onboarding1: UIView!
+    @IBOutlet weak var onboarding2: UIView!
+    @IBOutlet weak var onboarding3: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var logIn: UIButton!
     @IBOutlet weak var pageIndicator: UIPageControl!
-    @IBOutlet weak var logInView: UIImageView!
     @IBOutlet weak var skipView: UIImageView!
     
     override func viewDidLoad() {
@@ -20,7 +23,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
 
         scrollView.contentSize = CGSize(width: 1125, height: 667)
         scrollView.delegate = self
-        logInView.alpha = 0
+        logIn.alpha = 0
         skipView.alpha = 0
         pageIndicator.alpha = 1
     }
@@ -36,14 +39,14 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         
         if offset >= 750 {
             UIView.animate(withDuration: 0.3, animations: {
-                self.logInView.alpha = 1
+                self.logIn.alpha = 1
                 self.skipView.alpha = 1
             })
             
             self.pageIndicator.alpha = 0
         }
         else {
-            self.logInView.alpha = 0
+            self.logIn.alpha = 0
             self.skipView.alpha = 0
             self.pageIndicator.alpha = 1
             
