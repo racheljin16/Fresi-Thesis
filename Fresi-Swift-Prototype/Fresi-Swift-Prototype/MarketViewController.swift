@@ -15,6 +15,9 @@ class MarketViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var listImageView: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    var lightBoxTransition: LightBoxTransition!
+    var selectedImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +25,8 @@ class MarketViewController: UIViewController, UIScrollViewDelegate {
         heroScrollView.delegate = self
         listScrollView.contentSize = CGSize(width: 375, height: 1055)
         listScrollView.delegate = self
+        
+        lightBoxTransition = LightBoxTransition()
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -38,6 +43,21 @@ class MarketViewController: UIViewController, UIScrollViewDelegate {
         listScrollView.scrollIndicatorInsets.top = 0
         listScrollView.scrollIndicatorInsets.bottom = 50
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destinationVC = segue.destination as! PhotoViewController
+        destinationVC.image = self.selectedImageView.image
+        destinationVC.modalPresentationStyle = .custom
+        destinationVC.transitioningDelegate = self.lightBoxTransition
+    }
+    
+
+    @IBAction func onTapPhotos(_ sender: UITapGestureRecognizer) {
+            selectedImageView = sender.view as! UIImageView
+            performSegue(withIdentifier: "toPhotoSegue", sender: nil)
+            selectedImageView.frame = sender.view!.frame
     }
     
     

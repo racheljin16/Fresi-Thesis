@@ -62,11 +62,49 @@
             </objects>
             <point key="canvasLocation" x="-336.5" y="837.5"/>
         </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="bhb-z6-BQQ">
+            <objects>
+                <viewController storyboardIdentifier="photoViewController" id="kPF-ag-p0r" customClass="PhotoViewController" customModule="Fresi_Swift_Prototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFG-ya-5s8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="b8a-2R-b3x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="49T-rS-2GG">
+                                        <rect key="frame" x="306" y="16" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="onTapDone:" destination="kPF-ag-p0r" eventType="touchUpInside" id="tbi-fs-ycI"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="tQe-ws-bzd">
+                                        <rect key="frame" x="0.0" y="228" width="375" height="211"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="tQe-ws-bzd" id="49D-25-Wtd"/>
+                        <outlet property="scrollView" destination="b8a-2R-b3x" id="w4s-cx-Kfg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSN-4q-qIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1274.5" y="1699.5"/>
+        </scene>
         <!--Market View Controller-->
         <scene sceneID="cX7-5K-2lg">
             <objects>
                 <viewController id="5ho-Qw-oqs" customClass="MarketViewController" customModule="Fresi_Swift_Prototype" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oC0-0Y-4lc">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="oC0-0Y-4lc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -85,18 +123,31 @@
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="market-hero-1" id="sqx-77-Kj3">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
                                                 <autoresizingMask key="autoresizingMask"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="iUB-l9-VLt" appends="YES" id="44W-Z2-hZn"/>
+                                                </connections>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="market-hero-2" id="6Rv-Ly-R2J">
                                                 <rect key="frame" x="375" y="0.0" width="375" height="211"/>
                                                 <autoresizingMask key="autoresizingMask"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="yzo-OE-LR0" appends="YES" id="VCp-Jc-0rJ"/>
+                                                </connections>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="market-hero-3" id="22g-bZ-Auc">
                                                 <rect key="frame" x="750" y="0.0" width="375" height="211"/>
                                                 <autoresizingMask key="autoresizingMask"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="cfb-zc-UCN" appends="YES" id="qFh-JP-UrE"/>
+                                                </connections>
                                             </imageView>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="market-hero-4" id="RVd-E6-6D3">
                                                 <rect key="frame" x="1125" y="0.0" width="375" height="211"/>
                                                 <autoresizingMask key="autoresizingMask"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="3aq-Qc-3Cq" appends="YES" id="wMy-9P-tqg"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                     </scrollView>
@@ -104,6 +155,13 @@
                                         <rect key="frame" x="168" y="177" width="39" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </pageControl>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xbJ-4W-9gZ">
+                                        <rect key="frame" x="0.0" y="228" width="375" height="211"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="kPF-ag-p0r" kind="modal" identifier="toPhotoSegue" id="18y-ll-9lr"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="market-title" id="Af2-vU-qJt">
@@ -136,6 +194,26 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTC-Cz-B1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iUB-l9-VLt">
+                    <connections>
+                        <action selector="onTapPhotos:" destination="5ho-Qw-oqs" id="5Yj-ZZ-JO9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yzo-OE-LR0">
+                    <connections>
+                        <action selector="onTapPhotos:" destination="5ho-Qw-oqs" id="5IV-sh-502"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cfb-zc-UCN">
+                    <connections>
+                        <action selector="onTapPhotos:" destination="5ho-Qw-oqs" id="CJH-hf-cr7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3aq-Qc-3Cq">
+                    <connections>
+                        <action selector="onTapPhotos:" destination="5ho-Qw-oqs" id="NNc-ca-kPT"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-809.5" y="1699.5"/>
         </scene>
@@ -179,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjG-NW-zhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-337.5" y="1699.5"/>
+            <point key="canvasLocation" x="356" y="1700"/>
         </scene>
         <!--Market Map View Controller-->
         <scene sceneID="HZ0-Zu-Oio">
@@ -464,7 +542,7 @@
             <objects>
                 <viewController id="iY4-6u-HDh" customClass="OnboardingViewController" customModule="Fresi_Swift_Prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iTc-Rc-OFn">
-                        <rect key="frame" x="0.0" y="0.0" width="1125" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" pagingEnabled="YES" id="Npf-LX-Muy">
@@ -576,7 +654,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="1125" height="667"/>
                     <connections>
                         <outlet property="logIn" destination="x9a-bV-Fmg" id="mjQ-5w-rCn"/>
                         <outlet property="onboarding1" destination="2Ph-t0-cjP" id="fzl-2O-oY4"/>
