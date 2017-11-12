@@ -28,6 +28,10 @@
 		CC97FB6E1DEFB78600AB60EA /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB6D1DEFB78600AB60EA /* MarketViewController.swift */; };
 		CC97FB701DEFC1E900AB60EA /* MarketMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97FB6F1DEFC1E900AB60EA /* MarketMapViewController.swift */; };
 		CCD51B381DF8F6C700E39473 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD51B371DF8F6C700E39473 /* OnboardingViewController.swift */; };
+		CCEC10B71FB65A7700E6BA52 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEC10B61FB65A7700E6BA52 /* PhotoViewController.swift */; };
+		CCEC10B91FB65D4700E6BA52 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEC10B81FB65D4700E6BA52 /* BaseTransition.swift */; };
+		CCEC10BB1FB65D5300E6BA52 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEC10BA1FB65D5300E6BA52 /* Common.swift */; };
+		CCEC10BD1FB65DBC00E6BA52 /* LightBoxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEC10BC1FB65DBC00E6BA52 /* LightBoxTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		CC97FB6D1DEFB78600AB60EA /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		CC97FB6F1DEFC1E900AB60EA /* MarketMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketMapViewController.swift; sourceTree = "<group>"; };
 		CCD51B371DF8F6C700E39473 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CCEC10B61FB65A7700E6BA52 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		CCEC10B81FB65D4700E6BA52 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		CCEC10BA1FB65D5300E6BA52 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CCEC10BC1FB65DBC00E6BA52 /* LightBoxTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightBoxTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +142,11 @@
 				CC3AAF071DEC97080073F77E /* ViewController.swift */,
 				CC3AAF091DEC97080073F77E /* Main.storyboard */,
 				CC66DDAB1F9D681B00B7928E /* FbLogInViewController.swift */,
+				CCEC10B81FB65D4700E6BA52 /* BaseTransition.swift */,
 				CC66DDB11F9D6AB800B7928E /* FBViewController.swift */,
+				CCEC10BC1FB65DBC00E6BA52 /* LightBoxTransition.swift */,
+				CCEC10BA1FB65D5300E6BA52 /* Common.swift */,
+				CCEC10B61FB65A7700E6BA52 /* PhotoViewController.swift */,
 				CC3AAF0C1DEC97080073F77E /* Assets.xcassets */,
 				CC3AAF0E1DEC97080073F77E /* LaunchScreen.storyboard */,
 				CC3AAF111DEC97080073F77E /* Info.plist */,
@@ -316,6 +328,7 @@
 				CC97FB681DEFAE0000AB60EA /* RecipeViewController.swift in Sources */,
 				CC97FB701DEFC1E900AB60EA /* MarketMapViewController.swift in Sources */,
 				CC97FB661DEFA83B00AB60EA /* FindMarketViewController.swift in Sources */,
+				CCEC10B91FB65D4700E6BA52 /* BaseTransition.swift in Sources */,
 				CC97FB6C1DEFB42600AB60EA /* MapDetailViewController.swift in Sources */,
 				CC3AAF081DEC97080073F77E /* ViewController.swift in Sources */,
 				CC97FB6A1DEFB40900AB60EA /* HomeMapViewController.swift in Sources */,
@@ -325,6 +338,9 @@
 				CC66DDAC1F9D681B00B7928E /* FbLogInViewController.swift in Sources */,
 				CC3AE46B1DFD1EA10094076C /* RecipeDetailViewController.swift in Sources */,
 				CC97FB6E1DEFB78600AB60EA /* MarketViewController.swift in Sources */,
+				CCEC10BB1FB65D5300E6BA52 /* Common.swift in Sources */,
+				CCEC10B71FB65A7700E6BA52 /* PhotoViewController.swift in Sources */,
+				CCEC10BD1FB65DBC00E6BA52 /* LightBoxTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

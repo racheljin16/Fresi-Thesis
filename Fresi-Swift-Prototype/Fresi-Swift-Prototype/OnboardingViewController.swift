@@ -53,7 +53,8 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         }
     }
 
-
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
