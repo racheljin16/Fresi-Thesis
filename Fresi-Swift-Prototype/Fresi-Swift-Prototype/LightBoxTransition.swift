@@ -32,7 +32,7 @@ class LightBoxTransition: BaseTransition {
         let MarketViewController = navigationController.topViewController as! MarketViewController
         let photoViewController = toViewController as! PhotoViewController
         
-        let frame = window.convert(MarketViewController.selectedImageView.frame, from: MarketViewController.listScrollView)
+        let frame = window.convert(MarketViewController.hero1View.frame, from: MarketViewController.listScrollView)
         
         transitionImageView = UIImageView(frame: frame)
         transitionImageView.contentMode = UIViewContentMode.scaleAspectFit
@@ -61,7 +61,7 @@ class LightBoxTransition: BaseTransition {
         let photoViewController = fromViewController as! PhotoViewController
         
         let frame = window.convert(photoViewController.imageView.frame, from: photoViewController.scrollView)
-        let endFrame = window.convert(MarketViewController.selectedImageView.frame, from: MarketViewController.listScrollView)
+        let endFrame = window.convert(MarketViewController.hero1View.frame, from: MarketViewController.listScrollView)
         
         endTransitionImageView = UIImageView(frame: frame)
         endTransitionImageView.image = photoViewController.imageView.image

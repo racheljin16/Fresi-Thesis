@@ -14,6 +14,10 @@ class MarketViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var listScrollView: UIScrollView!
     @IBOutlet weak var listImageView: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var hero1View: UIImageView!
+    @IBOutlet weak var Hero2View: UIImageView!
+    @IBOutlet weak var Hero3View: UIImageView!
+    @IBOutlet weak var Hero4View: UIImageView!
     
     var lightBoxTransition: LightBoxTransition!
     var selectedImageView: UIImageView!
