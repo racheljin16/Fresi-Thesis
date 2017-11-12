@@ -83,7 +83,7 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="tQe-ws-bzd">
-                                        <rect key="frame" x="0.0" y="228" width="375" height="211"/>
+                                        <rect key="frame" x="0.0" y="170" width="375" height="211"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -169,14 +169,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SAT 04.16 9AM - 1PM" textAlignment="center" minimumFontSize="17" id="3wb-Ky-Wx9">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="20"/>
+                                        <rect key="frame" x="0.0" y="44" width="375" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SUNNYVALE" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" id="qBn-Mo-ZRY">
-                                        <rect key="frame" x="0.0" y="16" width="375" height="28"/>
+                                        <rect key="frame" x="0.0" y="19" width="375" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
@@ -213,6 +213,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="64p-Yd-9HV"/>
                     <connections>
+                        <outlet property="Hero2View" destination="6Rv-Ly-R2J" id="BxG-SL-b25"/>
+                        <outlet property="Hero3View" destination="22g-bZ-Auc" id="0M6-rZ-vQZ"/>
+                        <outlet property="Hero4View" destination="RVd-E6-6D3" id="eut-oy-GYL"/>
+                        <outlet property="hero1View" destination="sqx-77-Kj3" id="uAi-Je-vrC"/>
                         <outlet property="heroScrollView" destination="cjj-cD-WWx" id="nGT-CO-Ioj"/>
                         <outlet property="listImageView" destination="CmI-sL-Xv4" id="1Fe-7x-ID8"/>
                         <outlet property="listScrollView" destination="p1P-w6-CPE" id="EOs-lv-ERA"/>
